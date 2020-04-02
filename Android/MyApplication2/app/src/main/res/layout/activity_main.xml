@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Montant:"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+
+    <EditText
+        android:id="@+id/editTextMontant"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+    android:id="@+id/buttonCalculer"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="93dp"
+        android:text="@string/btn_calculer"
+    android:theme="@style/Base.Widget.AppCompat.Button.Borderless.Colored"/>
+
+
+    <TextView
+        android:id="@+id/textViewRes"
+        android:layout_width="366dp"
+        android:layout_height="44dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="198dp"
+        android:text="0"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="161dp"
+        android:text="@string/label_resultat"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+</android.widget.RelativeLayout>
